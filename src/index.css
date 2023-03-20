@@ -7,22 +7,28 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+body{
+  width: 100%;
+  overflow-x: hidden;
+  background: #222325;
+  background-attachment: fixed;
+}
 @media(min-width:1280px){
   ::-webkit-scrollbar{
       width: 10px;
       height: 10px;
   }
   ::-webkit-scrollbar-track {
-      background-color: #ccc5b9;
+      background-color: #d5d4d2;
   }
   ::-webkit-scrollbar-thumb {
       box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
       border-radius: 8px;
-      background: #252422;
+      background: #0d5936;
   }
   ::-webkit-scrollbar-thumb:hover{
       transition: all .3s ease-out;
-      background: #403d39;
+      background: #1dbf73;
       box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
   }
 }

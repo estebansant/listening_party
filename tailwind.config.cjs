@@ -24,12 +24,12 @@ module.exports = {
     },
     colors: {
       // Color palette
-      'black': '#252422',
-      'secondary-black': '#403d39',
-      'gray': '#ccc5b9',
-      'white': '#FAFAFA',
-      'secondary-white': '#f1faee',
-      'green': '#38b000',
+      'black': '#222325',
+      'gray': '#d5d4d2',
+      'blue': '#094074',
+      'white': '#f1faee',
+      'green': '#1dbf73',
+      'dark-green': '#0d5936',
     },
     fontFamily:{
       Merriweather:['Merriweather', 'serif'],
