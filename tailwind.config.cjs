@@ -31,10 +31,6 @@ module.exports = {
       'green': '#1dbf73',
       'dark-green': '#0d5936',
     },
-    fontFamily:{
-      Merriweather:['Merriweather', 'serif'],
-      Lato:['Lato', 'sans-serif']
-    },
     fontSize:{
       'xs': '12px',
       'sm': '14px',
@@ -62,7 +58,11 @@ module.exports = {
       'lg': '6px 10px 15px -3px rgb(0 0 0 / 0.45)',
       'xl': '9px 20px 25px -5px rgb(0 0 0 / 0.45)',
     },
-    extend: {},
+    extend: {
+      fontFamily:{
+        'dosis': ['Dosis', 'sans-serif'],
+      },
+    },
   },
   plugins: [
     
