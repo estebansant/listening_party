@@ -3,7 +3,7 @@ import heart from "../assets/icons/heart.svg";
 
 const Footer = () => {
   return (
-    <section className="h-20 w-full flex justify-around items-center bg-dark-green absolute z-40 bottom-0">
+    <section className="h-20 w-full flex justify-around items-center bg-dark-green mt-auto">
       <div>
         <p className="text-white font-dosis text-base">Using <a href="https://developer.spotify.com/" target="_blank" rel="noopener noreferrer" className="hover:underline visited:blue">Spotify API</a> <br/>
         
