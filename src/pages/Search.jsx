@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-const Search = () => {
+const Search = ({page, setPage}) => {
   return (
-    <div>Search</div>
+    <div>Hey</div>
   )
 }
 

@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { SearchBar } from './SearchBar';
 
-const SongSearch = () => {
+const SongSearch = ({page, setPage}) => {
   return (
-    <div>SongSearch</div>
+    <React.Fragment>
+      {page === "songSearch" &&
+        <SearchBar/>
+      }
+    </React.Fragment>
   )
 }
 
