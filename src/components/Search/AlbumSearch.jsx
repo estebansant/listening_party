@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { SearchBar } from './SearchBar';
 
-const AlbumSearch = () => {
+const AlbumSearch = ({page}) => {
   return (
-    <div>AlbumSearch</div>
+    <React.Fragment>
+      {page === "albumSearch" &&
+        <SearchBar />
+      }
+    </React.Fragment>
   )
 }
 

@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Search = ({page, setPage}) => {
+const Search = ({page, children}) => {
   return (
-    <div>Hey</div>
+      <section>
+        {children}
+      </section>
   )
 }
 

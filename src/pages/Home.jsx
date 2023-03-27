@@ -1,7 +1,6 @@
 import React from 'react';
-import { ButtonChoose } from '../components/ButtonChoose';
 
-const Home = ({page, setPage}) => {
+const Home = ({page, children}) => {
   return (
     <React.Fragment>
       {page === "chooseButtons" && 
@@ -12,7 +11,7 @@ const Home = ({page, setPage}) => {
               <b>Easy to use, great to discover.</b>
           </p>
           <h2 className="text-green font-dosis text-center font-semibold text-2xl mt-8 mb-6">Please choose an option:</h2>
-          <ButtonChoose />
+          {children}
         </section>
       }
     </React.Fragment>

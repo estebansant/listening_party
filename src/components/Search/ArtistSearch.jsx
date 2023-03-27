@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { SearchBar } from './SearchBar';
 
-const ArtistSearch = () => {
+const ArtistSearch = ({page}) => {
   return (
-    <div>ArtistSearch</div>
+    <React.Fragment>
+      {page === "artistSearch" &&
+        <SearchBar />
+      }
+    </React.Fragment>
   )
 }
 

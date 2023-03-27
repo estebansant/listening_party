@@ -1,5 +1,5 @@
 import React from 'react';
-import { useInitialState } from './useInitialState';
+import { useInitialState } from './useInitialState.js';
 import { Layout } from './container/Layout';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -16,21 +16,24 @@ function App() {
 
   const {
     page,
-    setPage
+    setPage,
   } = useInitialState();
 
   return (
     <React.Fragment>
       <Layout>
-        <Header />
-        <Home page={page}>
+        <Header
+          page={page}
+          setPage={setPage}
+        />
+        <Home page={page} setPage={setPage}>
           <ButtonChoose setPage={setPage}/>
         </Home>
-        <Search>
-          <SongSearch />
-          <AlbumSearch />
-          <ArtistSearch />
-          <FriendsSearch />
+        <Search page={page}>
+          <SongSearch page={page}/>
+          <AlbumSearch page={page}/>
+          <ArtistSearch page={page}/>
+          <FriendsSearch page={page}/>
         </Search>
         <Footer />
       </Layout>
